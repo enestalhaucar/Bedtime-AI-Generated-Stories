@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC32E5762C4E5320001313C4 /* BedtimeAIGeneratedStoriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5752C4E5320001313C4 /* BedtimeAIGeneratedStoriesApp.swift */; };
+		EC32E5782C4E5320001313C4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5772C4E5320001313C4 /* HomeView.swift */; };
+		EC32E57A2C4E5323001313C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC32E5792C4E5323001313C4 /* Assets.xcassets */; };
+		EC32E57D2C4E5323001313C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC32E57C2C4E5323001313C4 /* Preview Assets.xcassets */; };
+		EC32E5852C4E5DDE001313C4 /* buttonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5842C4E5DDE001313C4 /* buttonView.swift */; };
+		EC32E5872C4E5E38001313C4 /* PromptOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5862C4E5E37001313C4 /* PromptOneView.swift */; };
+		EC32E58A2C4E6D1D001313C4 /* AgeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5892C4E6D1D001313C4 /* AgeSlider.swift */; };
+		EC32E58C2C4E6D7F001313C4 /* TFAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E58B2C4E6D7F001313C4 /* TFAnimation.swift */; };
+		EC32E58F2C4E6DD8001313C4 /* Tale.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E58E2C4E6DD8001313C4 /* Tale.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC32E5722C4E5320001313C4 /* BedtimeAIGeneratedStories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BedtimeAIGeneratedStories.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC32E5752C4E5320001313C4 /* BedtimeAIGeneratedStoriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeAIGeneratedStoriesApp.swift; sourceTree = "<group>"; };
+		EC32E5772C4E5320001313C4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EC32E5792C4E5323001313C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC32E57C2C4E5323001313C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC32E5842C4E5DDE001313C4 /* buttonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonView.swift; sourceTree = "<group>"; };
+		EC32E5862C4E5E37001313C4 /* PromptOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptOneView.swift; sourceTree = "<group>"; };
+		EC32E5892C4E6D1D001313C4 /* AgeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSlider.swift; sourceTree = "<group>"; };
+		EC32E58B2C4E6D7F001313C4 /* TFAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFAnimation.swift; sourceTree = "<group>"; };
+		EC32E58E2C4E6DD8001313C4 /* Tale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tale.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC32E56F2C4E5320001313C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC32E5692C4E5320001313C4 = {
+			isa = PBXGroup;
+			children = (
+				EC32E5742C4E5320001313C4 /* BedtimeAIGeneratedStories */,
+				EC32E5732C4E5320001313C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC32E5732C4E5320001313C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E5722C4E5320001313C4 /* BedtimeAIGeneratedStories.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC32E5742C4E5320001313C4 /* BedtimeAIGeneratedStories */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E5752C4E5320001313C4 /* BedtimeAIGeneratedStoriesApp.swift */,
+				EC32E58D2C4E6DCA001313C4 /* Model */,
+				EC32E5832C4E5DC0001313C4 /* View */,
+				EC32E5792C4E5323001313C4 /* Assets.xcassets */,
+				EC32E57B2C4E5323001313C4 /* Preview Content */,
+			);
+			path = BedtimeAIGeneratedStories;
+			sourceTree = "<group>";
+		};
+		EC32E57B2C4E5323001313C4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E57C2C4E5323001313C4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC32E5832C4E5DC0001313C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E5772C4E5320001313C4 /* HomeView.swift */,
+				EC32E5862C4E5E37001313C4 /* PromptOneView.swift */,
+				EC32E5882C4E6CF9001313C4 /* ComponentViews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC32E5882C4E6CF9001313C4 /* ComponentViews */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E5842C4E5DDE001313C4 /* buttonView.swift */,
+				EC32E5892C4E6D1D001313C4 /* AgeSlider.swift */,
+				EC32E58B2C4E6D7F001313C4 /* TFAnimation.swift */,
+			);
+			path = ComponentViews;
+			sourceTree = "<group>";
+		};
+		EC32E58D2C4E6DCA001313C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E58E2C4E6DD8001313C4 /* Tale.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC32E5712C4E5320001313C4 /* BedtimeAIGeneratedStories */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC32E5802C4E5323001313C4 /* Build configuration list for PBXNativeTarget "BedtimeAIGeneratedStories" */;
+			buildPhases = (
+				EC32E56E2C4E5320001313C4 /* Sources */,
+				EC32E56F2C4E5320001313C4 /* Frameworks */,
+				EC32E5702C4E5320001313C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BedtimeAIGeneratedStories;
+			productName = BedtimeAIGeneratedStories;
+			productReference = EC32E5722C4E5320001313C4 /* BedtimeAIGeneratedStories.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC32E56A2C4E5320001313C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					EC32E5712C4E5320001313C4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = EC32E56D2C4E5320001313C4 /* Build configuration list for PBXProject "BedtimeAIGeneratedStories" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC32E5692C4E5320001313C4;
+			productRefGroup = EC32E5732C4E5320001313C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC32E5712C4E5320001313C4 /* BedtimeAIGeneratedStories */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC32E5702C4E5320001313C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC32E57D2C4E5323001313C4 /* Preview Assets.xcassets in Resources */,
+				EC32E57A2C4E5323001313C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC32E56E2C4E5320001313C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC32E5852C4E5DDE001313C4 /* buttonView.swift in Sources */,
+				EC32E5872C4E5E38001313C4 /* PromptOneView.swift in Sources */,
+				EC32E58C2C4E6D7F001313C4 /* TFAnimation.swift in Sources */,
+				EC32E58A2C4E6D1D001313C4 /* AgeSlider.swift in Sources */,
+				EC32E58F2C4E6DD8001313C4 /* Tale.swift in Sources */,
+				EC32E5782C4E5320001313C4 /* HomeView.swift in Sources */,
+				EC32E5762C4E5320001313C4 /* BedtimeAIGeneratedStoriesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EC32E57E2C4E5323001313C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC32E57F2C4E5323001313C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC32E5812C4E5323001313C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BedtimeAIGeneratedStories/Preview Content\"";
+				DEVELOPMENT_TEAM = S7VDAK3AXN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enestalhaucar.BedtimeAIGeneratedStories;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC32E5822C4E5323001313C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BedtimeAIGeneratedStories/Preview Content\"";
+				DEVELOPMENT_TEAM = S7VDAK3AXN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enestalhaucar.BedtimeAIGeneratedStories;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC32E56D2C4E5320001313C4 /* Build configuration list for PBXProject "BedtimeAIGeneratedStories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC32E57E2C4E5323001313C4 /* Debug */,
+				EC32E57F2C4E5323001313C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC32E5802C4E5323001313C4 /* Build configuration list for PBXNativeTarget "BedtimeAIGeneratedStories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC32E5812C4E5323001313C4 /* Debug */,
+				EC32E5822C4E5323001313C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC32E56A2C4E5320001313C4 /* Project object */;
+}
