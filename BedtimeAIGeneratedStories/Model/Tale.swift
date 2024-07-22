@@ -12,7 +12,7 @@ struct Tales : Identifiable, Equatable, Hashable {
     let id = UUID().uuidString
     var role : Role
     var name : String
-    var storyLanguage : String
+    var storyLanguage : Language
     var age : Int
     var gender : Gender
     var endOfStory : EndOfStory
@@ -45,4 +45,12 @@ enum Gender: String, CaseIterable, Identifiable, Hashable {
     case diverse = "Diverse"
     
     var id: String { self.rawValue }
+}
+
+enum Language : String, CaseIterable, Identifiable, Hashable {
+    var id: String { self.rawValue }
+    
+    case English = "English"
+    case Turkish = "Turkish"
+    case German = "German"
 }
