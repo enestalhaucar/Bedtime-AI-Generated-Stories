@@ -37,14 +37,6 @@ struct HomeView: View {
                          .fontDesign(.serif)
                          .padding(.bottom,50)
                     
-                
-//                    Text("  Prepare your little ones for a peaceful night's sleep with our enchanting bedtime stories! Imagine creating a new magical tale every night. The key to sweet dreams is here.")
-//                        .foregroundStyle(.white)
-//                        .font(.headline)
-//                        .fontWeight(.medium)
-//                        .fontDesign(.default)
-//                        .padding(.bottom,50)
-                    
                     Spacer()
                     Button(action: {
                         path.append("PromptOneView")

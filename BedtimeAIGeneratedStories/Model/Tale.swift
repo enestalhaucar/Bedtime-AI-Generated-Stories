@@ -53,4 +53,5 @@ enum Language : String, CaseIterable, Identifiable, Hashable {
     case English = "English"
     case Turkish = "Turkish"
     case German = "German"
+    case Spanish = "Spanish"
 }

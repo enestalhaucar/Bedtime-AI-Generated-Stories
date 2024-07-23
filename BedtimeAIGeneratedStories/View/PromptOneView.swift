@@ -15,6 +15,7 @@ struct PromptOneView: View {
     @State var email = ""
     @State var name = ""
     @State private var selectedGender : Gender = .female
+    @State private var selectedLanguage : Language = .English
     
     var body: some View {
         ZStack {
@@ -32,25 +33,33 @@ struct PromptOneView: View {
                 AgeSlider()
                 
                 
+                GenderPicker(selectedGender: selectedGender)
+                
                 VStack {
-                    Text("Gender")
+                    Text("Language")
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .foregroundStyle(.white)
                         .padding(.horizontal)
                         .padding(.vertical,15)
-                        
-                    Picker(selection: $selectedGender) {
-                        ForEach(Gender.allCases) { gender in
-                            Text(gender.rawValue).foregroundStyle(.white)
-                                .tag(gender)
+                    Picker(selection: $selectedLanguage) {
+                        ForEach(Language.allCases) { lang in
+                            Text(lang.rawValue)
+                                .foregroundStyle(.white)
+                                .tag(lang)
+                            
                         }
                     } label: {
                         
                     }.pickerStyle(SegmentedPickerStyle())
                         .background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
-                        .padding(.horizontal)
-                        .padding(.bottom,20)
+                            .padding(.horizontal)
+                            .padding(.bottom,20)
+
+                    
                 }.background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
+               
+                
+                    
                 
             }.padding(.horizontal, 45)
         }
