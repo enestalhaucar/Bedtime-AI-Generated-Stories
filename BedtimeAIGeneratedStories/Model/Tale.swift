@@ -62,8 +62,8 @@ enum jobName : String, CaseIterable, Identifiable, Hashable {
     var id: String {self.rawValue}
     case Superhero = "Superhero"
     case Doctor = "Doctor"
-    case PrincePrincess = "Prince / Princess"
-    case RoyalGuard = "RoyalGuard"
+    case Princess = "Princess"
+    case RoyalGuard = "Royal Guard"
     case Wizard = "Wizard"
     case Knight = "Knight"
     case Farmer = "Farmer"

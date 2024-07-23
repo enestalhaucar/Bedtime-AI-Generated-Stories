@@ -15,13 +15,7 @@ struct HomeView: View {
         NavigationStack(path: $path){
             ZStack {
                 
-                Image("backgroundImage")
-                    .resizable()
-                    .scaledToFill()
-                    .ignoresSafeArea()
-                
-                Color.black.opacity(0.4)
-                    .ignoresSafeArea()
+                backgroundView()
                 
                 VStack() {
                     Spacer()
@@ -38,14 +32,17 @@ struct HomeView: View {
                          .padding(.bottom,50)
                     
                     Spacer()
-                    Button(action: {
-                        path.append("PromptOneView")
-                    }) {
+                    NavigationLink {
+                        PromptOneView()
+                    } label: {
                         Text("Generate Tales")
-                    }.buttonStyle(GradientButtonStyle())
-                        .navigationDestination(for: String.self) { value in
-                                PromptOneView()
-                        }
+                            .foregroundStyle(.white)
+                            .fontWeight(.heavy)
+                            .font(.title2)
+                            .padding()
+                            .background(Color.mint, in: .rect(cornerRadius: 16))
+                    }
+
                     
                    
                     

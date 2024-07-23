@@ -17,18 +17,12 @@ struct PromptOneView: View {
     @State private var selectedGender : Gender = .female
     @State private var selectedLanguage : Language = .English
     @State private var selectedVoiceLanguage : Language = .English
+    @State private var path = NavigationPath()
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             ZStack {
-                Image("backgroundImage")
-                    .resizable()
-                    .scaledToFill()
-                    .ignoresSafeArea()
-                
-                
-                Color.black.opacity(0.3)
-                    .ignoresSafeArea()
+                backgroundView()
                 ScrollView {
                     VStack(spacing: 45) {
                         //Name textField
@@ -43,6 +37,20 @@ struct PromptOneView: View {
                         VoiceLanguagePicker(selectedVoiceLanguage: selectedVoiceLanguage)
                         // Desired Story's Length
                         LengthSlider()
+                        
+                        NavigationLink {
+                            PromptTwoView()
+                        } label: {
+                            Text("Next")
+                                .foregroundStyle(.white)
+                                .fontWeight(.heavy)
+                                .font(.title2)
+                                .padding()
+                                .background(Color.mint, in: .rect(cornerRadius: 16))
+  
+                        }
+
+
                     }.padding(25)
                 }
             }.navigationTitle("✨ Generate Story ✨")
