@@ -10,7 +10,6 @@ import SwiftUI
 struct GenderPicker: View {
     @State var selectedGender : Gender 
     
-    
     var body: some View {
         VStack {
             Text("Gender")

@@ -16,52 +16,40 @@ struct PromptOneView: View {
     @State var name = ""
     @State private var selectedGender : Gender = .female
     @State private var selectedLanguage : Language = .English
+    @State private var selectedVoiceLanguage : Language = .English
     
     var body: some View {
-        ZStack {
-            Image("backgroundImage")
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-            
-            Color.black.opacity(0.3)
-                .ignoresSafeArea()
-            
-            VStack(spacing:35) {
-                TFAnimation(title: "Name", text: $name)
-                
-                AgeSlider()
+        NavigationStack {
+            ZStack {
+                Image("backgroundImage")
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
                 
                 
-                GenderPicker(selectedGender: selectedGender)
+                Color.black.opacity(0.3)
+                    .ignoresSafeArea()
+                ScrollView {
+                    VStack(spacing: 45) {
+                        //Name textField
+                        TFAnimation(title: "Name", text: $name)
+                        // Children Age Slider
+                        AgeSlider()
+                        // Children Gender Picker
+                        GenderPicker(selectedGender: selectedGender)
+                        // Desired Language
+                        LanguagePicker(selectedLanguage: selectedLanguage)
+                        // Desired Voice Language
+                        VoiceLanguagePicker(selectedVoiceLanguage: selectedVoiceLanguage)
+                        // Desired Story's Length
+                        LengthSlider()
+                    }.padding(25)
+                }
+            }.navigationTitle("✨ Generate Story ✨")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbarBackground(Color.white.opacity(0.001), for: .navigationBar)
+                .toolbarBackground(.visible, for: .navigationBar)
                 
-                VStack {
-                    Text("Language")
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .foregroundStyle(.white)
-                        .padding(.horizontal)
-                        .padding(.vertical,15)
-                    Picker(selection: $selectedLanguage) {
-                        ForEach(Language.allCases) { lang in
-                            Text(lang.rawValue)
-                                .foregroundStyle(.white)
-                                .tag(lang)
-                            
-                        }
-                    } label: {
-                        
-                    }.pickerStyle(SegmentedPickerStyle())
-                        .background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
-                            .padding(.horizontal)
-                            .padding(.bottom,20)
-
-                    
-                }.background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
-               
-                
-                    
-                
-            }.padding(.horizontal, 45)
         }
     }
     

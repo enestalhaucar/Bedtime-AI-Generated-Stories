@@ -12,7 +12,9 @@ struct Tales : Identifiable, Equatable, Hashable {
     let id = UUID().uuidString
     var role : Role
     var name : String
+    var jobName : String
     var storyLanguage : Language
+    var voiceLanguage : Language
     var age : Int
     var gender : Gender
     var endOfStory : EndOfStory
@@ -54,4 +56,34 @@ enum Language : String, CaseIterable, Identifiable, Hashable {
     case Turkish = "Turkish"
     case German = "German"
     case Spanish = "Spanish"
+}
+
+enum jobName : String, CaseIterable, Identifiable, Hashable {
+    var id: String {self.rawValue}
+    case Superhero = "Superhero"
+    case Doctor = "Doctor"
+    case PrincePrincess = "Prince / Princess"
+    case RoyalGuard = "RoyalGuard"
+    case Wizard = "Wizard"
+    case Knight = "Knight"
+    case Farmer = "Farmer"
+    case Fisherman = "Fisherman"
+    case Chef = "Chef"
+    case Villager = "Villager"
+    case Forester = "Forester"
+    case Merchant = "Merchant"
+    case Blacksmith = "Blacksmith"
+    case Hunter = "Hunter"
+    case Scholar = "Scholar"
+    case Explorer = "Explorer"
+    case Sailor = "Sailor"
+    case Architect = "Architect"
+    case Teacher = "Teacher"
+    case Artist = "Artist"
+    case Musician = "Musician"
+    case Tailor = "Tailor"
+    case Cobbler = "Cobbler"
+    case Gardener = "Gardener"
+    case Postman = "Postman"
+    case Carpenter = "Carpenter"
 }

@@ -13,7 +13,7 @@ import GoogleGenerativeAI
 class Service {
     var model = GenerativeModel(name: "gemini-pro", apiKey: APIKey.default)
     private(set) var loadingResponse = false
-    private(set) var prompt = Tales(role: .user, name: "Enes", storyLanguage: .Turkish, age: 8, gender: .male, endOfStory: .sad, storyType: .fantasy, additionalCharachters: ["Talha", "Beyza"], place: "Asgard", XMinuteReading: 10)
+    private(set) var prompt = Tales(role: .user, name: "Enes", jobName: "enes", storyLanguage: .Turkish, voiceLanguage: .Turkish, age: 8, gender: .male, endOfStory: .sad, storyType: .fantasy, additionalCharachters: ["Talha", "Beyza"], place: "Asgard", XMinuteReading: 10)
     private var textInput = ""
     var AIResponse = ""
     var showStorySheet : Bool = false
