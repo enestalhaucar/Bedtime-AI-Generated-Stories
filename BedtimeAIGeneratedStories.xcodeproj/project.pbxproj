@@ -22,11 +22,14 @@
 		EC32E59A2C4E7130001313C4 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC32E5992C4E7130001313C4 /* GenerativeAI-Info.plist */; };
 		EC32E59C2C4E9811001313C4 /* GenderPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E59B2C4E9811001313C4 /* GenderPicker.swift */; };
 		EC32E59E2C4F7F21001313C4 /* LanguagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E59D2C4F7F21001313C4 /* LanguagePicker.swift */; };
-		EC32E5A02C4F7FEC001313C4 /* VoiceLanguagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E59F2C4F7FEC001313C4 /* VoiceLanguagePicker.swift */; };
+		EC32E5A02C4F7FEC001313C4 /* VoiceGenderPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E59F2C4F7FEC001313C4 /* VoiceGenderPicker.swift */; };
 		EC32E5A22C4F80CC001313C4 /* LengthSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5A12C4F80CC001313C4 /* LengthSlider.swift */; };
 		EC32E5A42C4FBD93001313C4 /* PromptTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5A32C4FBD93001313C4 /* PromptTwoView.swift */; };
 		EC32E5A62C4FE56C001313C4 /* GridJobNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5A52C4FE56C001313C4 /* GridJobNames.swift */; };
 		EC32E5A82C4FE5AA001313C4 /* backgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5A72C4FE5AA001313C4 /* backgroundView.swift */; };
+		EC32E5AA2C4FE700001313C4 /* PromptThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5A92C4FE700001313C4 /* PromptThreeView.swift */; };
+		EC32E5AC2C50D61D001313C4 /* StoryThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5AB2C50D61D001313C4 /* StoryThemePicker.swift */; };
+		EC32E5AF2C50DC7E001313C4 /* TaleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5AE2C50DC7E001313C4 /* TaleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,11 +48,14 @@
 		EC32E5992C4E7130001313C4 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
 		EC32E59B2C4E9811001313C4 /* GenderPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderPicker.swift; sourceTree = "<group>"; };
 		EC32E59D2C4F7F21001313C4 /* LanguagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePicker.swift; sourceTree = "<group>"; };
-		EC32E59F2C4F7FEC001313C4 /* VoiceLanguagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceLanguagePicker.swift; sourceTree = "<group>"; };
+		EC32E59F2C4F7FEC001313C4 /* VoiceGenderPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceGenderPicker.swift; sourceTree = "<group>"; };
 		EC32E5A12C4F80CC001313C4 /* LengthSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthSlider.swift; sourceTree = "<group>"; };
 		EC32E5A32C4FBD93001313C4 /* PromptTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptTwoView.swift; sourceTree = "<group>"; };
 		EC32E5A52C4FE56C001313C4 /* GridJobNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridJobNames.swift; sourceTree = "<group>"; };
 		EC32E5A72C4FE5AA001313C4 /* backgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backgroundView.swift; sourceTree = "<group>"; };
+		EC32E5A92C4FE700001313C4 /* PromptThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptThreeView.swift; sourceTree = "<group>"; };
+		EC32E5AB2C50D61D001313C4 /* StoryThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryThemePicker.swift; sourceTree = "<group>"; };
+		EC32E5AE2C50DC7E001313C4 /* TaleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				EC32E5752C4E5320001313C4 /* BedtimeAIGeneratedStoriesApp.swift */,
+				EC32E5AD2C50DC6D001313C4 /* ViewModel */,
 				EC32E5942C4E7084001313C4 /* GoogleAIGemini */,
 				EC32E58D2C4E6DCA001313C4 /* Model */,
 				EC32E5832C4E5DC0001313C4 /* View */,
@@ -107,6 +114,7 @@
 				EC32E5772C4E5320001313C4 /* HomeView.swift */,
 				EC32E5862C4E5E37001313C4 /* PromptOneView.swift */,
 				EC32E5A32C4FBD93001313C4 /* PromptTwoView.swift */,
+				EC32E5A92C4FE700001313C4 /* PromptThreeView.swift */,
 				EC32E5882C4E6CF9001313C4 /* ComponentViews */,
 			);
 			path = View;
@@ -120,10 +128,11 @@
 				EC32E58B2C4E6D7F001313C4 /* TFAnimation.swift */,
 				EC32E59B2C4E9811001313C4 /* GenderPicker.swift */,
 				EC32E59D2C4F7F21001313C4 /* LanguagePicker.swift */,
-				EC32E59F2C4F7FEC001313C4 /* VoiceLanguagePicker.swift */,
+				EC32E59F2C4F7FEC001313C4 /* VoiceGenderPicker.swift */,
 				EC32E5A12C4F80CC001313C4 /* LengthSlider.swift */,
 				EC32E5A52C4FE56C001313C4 /* GridJobNames.swift */,
 				EC32E5A72C4FE5AA001313C4 /* backgroundView.swift */,
+				EC32E5AB2C50D61D001313C4 /* StoryThemePicker.swift */,
 			);
 			path = ComponentViews;
 			sourceTree = "<group>";
@@ -144,6 +153,14 @@
 				EC32E5992C4E7130001313C4 /* GenerativeAI-Info.plist */,
 			);
 			path = GoogleAIGemini;
+			sourceTree = "<group>";
+		};
+		EC32E5AD2C50DC6D001313C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E5AE2C50DC7E001313C4 /* TaleViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,11 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC32E5A02C4F7FEC001313C4 /* VoiceLanguagePicker.swift in Sources */,
+				EC32E5A02C4F7FEC001313C4 /* VoiceGenderPicker.swift in Sources */,
 				EC32E5852C4E5DDE001313C4 /* buttonView.swift in Sources */,
 				EC32E5962C4E7096001313C4 /* Service.swift in Sources */,
 				EC32E5872C4E5E38001313C4 /* PromptOneView.swift in Sources */,
 				EC32E58C2C4E6D7F001313C4 /* TFAnimation.swift in Sources */,
+				EC32E5AA2C4FE700001313C4 /* PromptThreeView.swift in Sources */,
 				EC32E5A42C4FBD93001313C4 /* PromptTwoView.swift in Sources */,
 				EC32E59C2C4E9811001313C4 /* GenderPicker.swift in Sources */,
 				EC32E58A2C4E6D1D001313C4 /* AgeSlider.swift in Sources */,
@@ -237,8 +255,10 @@
 				EC32E5782C4E5320001313C4 /* HomeView.swift in Sources */,
 				EC32E5A22C4F80CC001313C4 /* LengthSlider.swift in Sources */,
 				EC32E5982C4E70DF001313C4 /* API.swift in Sources */,
+				EC32E5AC2C50D61D001313C4 /* StoryThemePicker.swift in Sources */,
 				EC32E5762C4E5320001313C4 /* BedtimeAIGeneratedStoriesApp.swift in Sources */,
 				EC32E5A62C4FE56C001313C4 /* GridJobNames.swift in Sources */,
+				EC32E5AF2C50DC7E001313C4 /* TaleViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

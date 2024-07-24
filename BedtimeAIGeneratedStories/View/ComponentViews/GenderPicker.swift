@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GenderPicker: View {
-    @State var selectedGender : Gender 
+    @Binding var selectedGender : Gender
     
     var body: some View {
         VStack {
@@ -34,5 +34,5 @@ struct GenderPicker: View {
 }
 
 #Preview {
-    GenderPicker(selectedGender: .male)
+    GenderPicker(selectedGender: .constant(.male))
 }

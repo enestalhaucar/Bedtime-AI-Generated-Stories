@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct LengthSlider: View {
-    @State private var value : Double = 0.5
+    @Binding var value : Double
     @FocusState var isActive
     var body: some View {
         VStack {
-            Text("Story's language \(Int(value * 750 + 100)) - \(Int(value * 750 + 150)) words")
+            Text("The story is \(Int(value * 8 + 4)) minutes reading length")
                 .padding(.leading)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .frame(height: 55)
@@ -54,5 +54,5 @@ struct LengthSlider: View {
 }
 
 #Preview {
-    LengthSlider()
+    LengthSlider(value: .constant(0.5))
 }

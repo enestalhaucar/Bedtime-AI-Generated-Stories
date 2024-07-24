@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GridJobNames: View {
-    @State private var selectedJob : jobName? = nil
+    @Binding var selectedJob : jobName
     var body: some View {
         LazyVGrid(columns: [GridItem(.flexible()),GridItem(.flexible())]) {
             ForEach(jobName.allCases) { job in
@@ -41,5 +41,5 @@ struct GridJobNames: View {
 }
 
 #Preview {
-    GridJobNames()
+    GridJobNames(selectedJob: .constant(.Architect))
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LanguagePicker: View {
-    @State var selectedLanguage : Language
+    @Binding var selectedLanguage : Language
     var body: some View {
         VStack {
             Text("Language")
@@ -36,5 +36,5 @@ struct LanguagePicker: View {
 }
 
 #Preview {
-    LanguagePicker(selectedLanguage: .Turkish)
+    LanguagePicker(selectedLanguage: .constant(.Turkish))
 }

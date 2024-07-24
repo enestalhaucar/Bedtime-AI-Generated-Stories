@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct BedtimeAIGeneratedStoriesApp: App {
+struct TalesApp: App {
+    @StateObject private var viewModel = TaleViewModel()
+
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environmentObject(viewModel)
         }
     }
 }

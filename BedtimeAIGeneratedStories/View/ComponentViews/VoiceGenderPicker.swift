@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct VoiceLanguagePicker: View {
-    @State var selectedVoiceLanguage : Language
+struct VoiceGenderPicker: View {
+    @Binding var selectedVoiceGender : VoiceGender
     var body: some View {
         VStack {
-            Text("Voice Language")
+            Text("Voice Gender")
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .foregroundStyle(.white)
                 .padding(.horizontal)
                 .padding(.vertical,15)
-            Picker(selection: $selectedVoiceLanguage) {
-                ForEach(Language.allCases) { lang in
+            Picker(selection: $selectedVoiceGender) {
+                ForEach(VoiceGender.allCases) { lang in
                     Text(lang.rawValue)
                         .foregroundStyle(.white)
                         .tag(lang)
@@ -36,5 +36,5 @@ struct VoiceLanguagePicker: View {
 }
 
 #Preview {
-    VoiceLanguagePicker(selectedVoiceLanguage: .Turkish)
+    VoiceGenderPicker(selectedVoiceGender: .constant(.male))
 }

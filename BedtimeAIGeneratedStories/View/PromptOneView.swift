@@ -12,11 +12,7 @@ import SwiftUI
 
 struct PromptOneView: View {
     @FocusState var isActive
-    @State var email = ""
-    @State var name = ""
-    @State private var selectedGender : Gender = .female
-    @State private var selectedLanguage : Language = .English
-    @State private var selectedVoiceLanguage : Language = .English
+    @EnvironmentObject var viewModel: TaleViewModel
     @State private var path = NavigationPath()
     
     var body: some View {
@@ -26,17 +22,23 @@ struct PromptOneView: View {
                 ScrollView {
                     VStack(spacing: 45) {
                         //Name textField
-                        TFAnimation(title: "Name", text: $name)
+                        TFAnimation(title: "Name", text: $viewModel.tales.name)
                         // Children Age Slider
-                        AgeSlider()
+                        AgeSlider(value: Binding(
+                            get: { Double(viewModel.tales.age) / 8.0 },
+                            set: { viewModel.tales.age = Int($0 * 8.0) }
+                        ))
                         // Children Gender Picker
-                        GenderPicker(selectedGender: selectedGender)
+                        GenderPicker(selectedGender: $viewModel.tales.gender)
                         // Desired Language
-                        LanguagePicker(selectedLanguage: selectedLanguage)
+                        LanguagePicker(selectedLanguage: $viewModel.tales.storyLanguage)
                         // Desired Voice Language
-                        VoiceLanguagePicker(selectedVoiceLanguage: selectedVoiceLanguage)
+                        VoiceGenderPicker(selectedVoiceGender: $viewModel.tales.voiceGender)
                         // Desired Story's Length
-                        LengthSlider()
+                        LengthSlider(value: Binding(
+                            get: { Double(viewModel.tales.XMinuteReading) / 8.0 },
+                            set: { viewModel.tales.XMinuteReading = Int($0 * 8.0) }
+                        ))
                         
                         NavigationLink {
                             PromptTwoView()
@@ -47,24 +49,18 @@ struct PromptOneView: View {
                                 .font(.title2)
                                 .padding()
                                 .background(Color.mint, in: .rect(cornerRadius: 16))
-  
                         }
-
-
                     }.padding(25)
                 }
             }.navigationTitle("✨ Generate Story ✨")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbarBackground(Color.white.opacity(0.001), for: .navigationBar)
                 .toolbarBackground(.visible, for: .navigationBar)
-                
         }
     }
-    
 }
-
-
 
 #Preview {
     PromptOneView()
+        .environmentObject(TaleViewModel())
 }

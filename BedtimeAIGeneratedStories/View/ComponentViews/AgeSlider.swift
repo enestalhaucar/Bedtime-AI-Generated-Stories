@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AgeSlider : View {
-    @State private var value : Double = 0.5
+    @Binding var value : Double 
     @FocusState var isActive
     var body: some View {
         VStack {
@@ -55,5 +55,5 @@ struct AgeSlider : View {
 }
 
 #Preview {
-    AgeSlider()
+    AgeSlider(value: .constant(0.5))
 }

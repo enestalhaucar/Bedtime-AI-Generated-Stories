@@ -14,9 +14,7 @@ struct HomeView: View {
     var body: some View {
         NavigationStack(path: $path){
             ZStack {
-                
                 backgroundView()
-                
                 VStack() {
                     Spacer()
                     Text("Bedtime AI")
@@ -25,11 +23,11 @@ struct HomeView: View {
                         .fontWeight(.bold)
                         .fontDesign(.serif)
                     Text("Generated Stories")
-                         .foregroundStyle(.white)
-                         .font(.largeTitle)
-                         .fontWeight(.bold)
-                         .fontDesign(.serif)
-                         .padding(.bottom,50)
+                        .foregroundStyle(.white)
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .fontDesign(.serif)
+                        .padding(.bottom,50)
                     
                     Spacer()
                     NavigationLink {
@@ -42,23 +40,13 @@ struct HomeView: View {
                             .padding()
                             .background(Color.mint, in: .rect(cornerRadius: 16))
                     }
-
-                    
-                   
-                    
-
-
-                        
-               
-                    
-                        
                 }.padding(.horizontal,40)
-                
             }
-        }
+        }.environmentObject(TaleViewModel())
     }
 }
 
 #Preview {
     HomeView()
+        .environmentObject(TaleViewModel())
 }
