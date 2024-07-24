@@ -18,7 +18,7 @@ struct ThemePickerView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                backgroundView()
+                backgroundView(backgroundImageName: "backgroundImage")
                 ScrollView {
                     Text("Choose a theme for story")
                         .fontDesign(.serif)
@@ -28,8 +28,16 @@ struct ThemePickerView: View {
                     
                     StoryThemePicker()
                     
-                    FetchButton(StartTitle: "Generate", EndTitle: "Success", reset: $reset, loadingResponse: $service.loadingResponse, action: sendMessage)
+                    FetchButton(StartTitle: "✨ Generate ✨", EndTitle: "Success", reset: $reset, loadingResponse: $service.loadingResponse, action: sendMessage)
+                        
+                    
+                    
+                    
                 }
+            }.sheet(isPresented: $service.isResponseDone) {
+                AIResponseView(response: service.AIResponse)
+                    .presentationDetents([.fraction(0.1), .medium, .large])
+                    
             }
             .navigationTitle("✨ Generate Story ✨")
             .navigationBarTitleDisplayMode(.inline)

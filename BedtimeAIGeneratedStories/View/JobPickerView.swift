@@ -14,7 +14,7 @@ struct JobPickerView: View {
     var body: some View {
         NavigationStack(path: $path) {
             ZStack {
-                backgroundView()
+                backgroundView(backgroundImageName: "backgroundImage")
                 VStack {
                     Text("Choose predefined charachter for your story")
                         .foregroundStyle(.white)

@@ -18,7 +18,7 @@ struct PersonalInfoView: View {
     var body: some View {
         NavigationStack(path: $path) {
             ZStack {
-                backgroundView()
+                backgroundView(backgroundImageName: "backgroundImage")
                 ScrollView {
                     VStack(spacing: 45) {
                         //Name textField

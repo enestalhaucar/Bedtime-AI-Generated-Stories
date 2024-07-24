@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+
 struct FetchButton: View {
     @State var spin = false
     @State var isPressed = false

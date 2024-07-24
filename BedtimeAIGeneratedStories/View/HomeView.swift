@@ -14,7 +14,7 @@ struct HomeView: View {
     var body: some View {
         NavigationStack(path: $path){
             ZStack {
-                backgroundView()
+                backgroundView(backgroundImageName: "backgroundImage")
                 VStack() {
                     Spacer()
                     Text("Bedtime AI")

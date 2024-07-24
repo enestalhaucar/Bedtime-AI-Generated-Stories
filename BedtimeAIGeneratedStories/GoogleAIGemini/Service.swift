@@ -15,6 +15,10 @@ class Service: ObservableObject {
     @Published var loadingResponse = false
     private var textInput = ""
     @Published var AIResponse = ""
+    @Published var isResponseDone = false
+    
+    
+    
     
     func fetchResponse(input: String) {
         loadingResponse = true
@@ -30,7 +34,7 @@ class Service: ObservableObject {
                 
                 AIResponse = text
                 print(AIResponse)
-                
+                isResponseDone = true
                 loadingResponse = false
             } catch {
                 loadingResponse = false
