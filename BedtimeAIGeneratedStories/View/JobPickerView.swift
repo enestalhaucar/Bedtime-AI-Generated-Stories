@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PromptTwoView: View {
+struct JobPickerView: View {
     @State private var path = NavigationPath()
     @EnvironmentObject var viewModel: TaleViewModel
     
@@ -27,7 +27,7 @@ struct PromptTwoView: View {
                         GridJobNames(selectedJob: $viewModel.tales.jobName)
                         
                         NavigationLink {
-                            PromptThreeView()
+                            ThemePickerView()
                         } label: {
                             Text("Next")
                                 .foregroundStyle(.white)
@@ -48,6 +48,6 @@ struct PromptTwoView: View {
 }
 
 #Preview {
-    PromptTwoView()
+    JobPickerView()
         .environmentObject(TaleViewModel())
 }

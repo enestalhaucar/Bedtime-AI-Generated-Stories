@@ -10,7 +10,7 @@ import SwiftUI
 
 
 
-struct PromptOneView: View {
+struct PersonalInfoView: View {
     @FocusState var isActive
     @EnvironmentObject var viewModel: TaleViewModel
     @State private var path = NavigationPath()
@@ -41,7 +41,7 @@ struct PromptOneView: View {
                         ))
                         
                         NavigationLink {
-                            PromptTwoView()
+                            JobPickerView()
                         } label: {
                             Text("Next")
                                 .foregroundStyle(.white)
@@ -61,6 +61,6 @@ struct PromptOneView: View {
 }
 
 #Preview {
-    PromptOneView()
+    PersonalInfoView()
         .environmentObject(TaleViewModel())
 }

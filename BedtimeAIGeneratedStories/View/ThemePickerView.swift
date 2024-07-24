@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PromptThreeView: View {
+struct ThemePickerView: View {
     @EnvironmentObject var viewModel: TaleViewModel
     @State private var service = Service()
     @State var textInput = ""
@@ -44,7 +44,7 @@ struct PromptThreeView: View {
     
     private func sendMessage() {
         Task {
-            textInput = "Hello, my name is \(viewModel.tales.name). I am \(viewModel.tales.age) years old and my gender is \(viewModel.tales.gender.rawValue). My story is written in \(viewModel.tales.storyLanguage.rawValue) and narrated in \(viewModel.tales.voiceGender.rawValue). My occupation is \(viewModel.tales.jobName.rawValue) and my story belongs to the \(viewModel.tales.storyType.rawValue) genre. The end of my story is \(viewModel.tales.endOfStory.rawValue). This story takes approximately \(viewModel.tales.XMinuteReading) minutes to read."
+            textInput = "Hello Gemini,I am someone who wants you to create fairy tales. I never want you to come back to me with anything other than a fairy tale. I want you to produce a good tale that you can produce by following the parameters I will give you. I will also give you the name and wishes of whoever this tale is for. The person who wishes this will become the main hero of the tale.The name of the main hero of the tale is \(viewModel.tales.name). This hero of ours is \(viewModel.tales.age) years old. That's why I want you to write a fairy tale suitable for this age. The gender of our main hero is \(viewModel.tales.gender). I want you to write this tale in \(viewModel.tales.name). You will give me response in this language.The profession of our main hero is \(viewModel.tales.jobName). So add this detail to our tale and you can make a connection from there.And let the theme of our fairy tale be \(viewModel.tales.storyType). Let this fairy tale be a plot and narrative that can have educational effects on our children, thanks to this theme.May our story have a \(viewModel.tales.endOfStory) ending Let the average reading time of the story be \(viewModel.tales.XMinuteReading) minutes"
             
             service.fetchResponse(input: textInput)
             textInput = ""
@@ -53,6 +53,6 @@ struct PromptThreeView: View {
 }
 
 #Preview {
-    PromptThreeView()
+    ThemePickerView()
         .environmentObject(TaleViewModel())
 }

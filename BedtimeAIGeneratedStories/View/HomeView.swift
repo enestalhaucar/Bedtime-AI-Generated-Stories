@@ -31,7 +31,7 @@ struct HomeView: View {
                     
                     Spacer()
                     NavigationLink {
-                        PromptOneView()
+                        PersonalInfoView()
                     } label: {
                         Text("Generate Tales")
                             .foregroundStyle(.white)

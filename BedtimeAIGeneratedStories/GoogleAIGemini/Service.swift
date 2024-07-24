@@ -11,13 +11,10 @@ import GoogleGenerativeAI
 
 @Observable
 class Service {
-    var model = GenerativeModel(name: "gemini-pro", apiKey: APIKey.default)
+    let model = GenerativeModel(name: "gemini-1.5-flash", apiKey: APIKey.default)
     private(set) var loadingResponse = false
-//    private(set) var prompt = Tales(role: .user, name: "Enes", jobName: .Artist, storyLanguage: .Turkish, voiceGender: .male, age: 8, gender: .male, endOfStory: .sad, storyType: .Adventure, XMinuteReading: 10)
     private var textInput = ""
     var AIResponse = ""
-    var showStorySheet : Bool = false
-    var titleString = "Story"
     
     func fetchResponse(input : String) {
         loadingResponse = true
@@ -34,7 +31,7 @@ class Service {
                 textInput = ""
                 AIResponse = text
                 print(AIResponse)
-                showStorySheet = true
+                
                 loadingResponse = false
             } catch {
                 loadingResponse = false

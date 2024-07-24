@@ -12,7 +12,7 @@
 		EC32E57A2C4E5323001313C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC32E5792C4E5323001313C4 /* Assets.xcassets */; };
 		EC32E57D2C4E5323001313C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC32E57C2C4E5323001313C4 /* Preview Assets.xcassets */; };
 		EC32E5852C4E5DDE001313C4 /* buttonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5842C4E5DDE001313C4 /* buttonView.swift */; };
-		EC32E5872C4E5E38001313C4 /* PromptOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5862C4E5E37001313C4 /* PromptOneView.swift */; };
+		EC32E5872C4E5E38001313C4 /* PersonalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5862C4E5E37001313C4 /* PersonalInfoView.swift */; };
 		EC32E58A2C4E6D1D001313C4 /* AgeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5892C4E6D1D001313C4 /* AgeSlider.swift */; };
 		EC32E58C2C4E6D7F001313C4 /* TFAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E58B2C4E6D7F001313C4 /* TFAnimation.swift */; };
 		EC32E58F2C4E6DD8001313C4 /* Tale.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E58E2C4E6DD8001313C4 /* Tale.swift */; };
@@ -24,10 +24,10 @@
 		EC32E59E2C4F7F21001313C4 /* LanguagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E59D2C4F7F21001313C4 /* LanguagePicker.swift */; };
 		EC32E5A02C4F7FEC001313C4 /* VoiceGenderPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E59F2C4F7FEC001313C4 /* VoiceGenderPicker.swift */; };
 		EC32E5A22C4F80CC001313C4 /* LengthSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5A12C4F80CC001313C4 /* LengthSlider.swift */; };
-		EC32E5A42C4FBD93001313C4 /* PromptTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5A32C4FBD93001313C4 /* PromptTwoView.swift */; };
+		EC32E5A42C4FBD93001313C4 /* JobPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5A32C4FBD93001313C4 /* JobPickerView.swift */; };
 		EC32E5A62C4FE56C001313C4 /* GridJobNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5A52C4FE56C001313C4 /* GridJobNames.swift */; };
 		EC32E5A82C4FE5AA001313C4 /* backgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5A72C4FE5AA001313C4 /* backgroundView.swift */; };
-		EC32E5AA2C4FE700001313C4 /* PromptThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5A92C4FE700001313C4 /* PromptThreeView.swift */; };
+		EC32E5AA2C4FE700001313C4 /* ThemePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5A92C4FE700001313C4 /* ThemePickerView.swift */; };
 		EC32E5AC2C50D61D001313C4 /* StoryThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5AB2C50D61D001313C4 /* StoryThemePicker.swift */; };
 		EC32E5AF2C50DC7E001313C4 /* TaleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5AE2C50DC7E001313C4 /* TaleViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +39,7 @@
 		EC32E5792C4E5323001313C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC32E57C2C4E5323001313C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC32E5842C4E5DDE001313C4 /* buttonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonView.swift; sourceTree = "<group>"; };
-		EC32E5862C4E5E37001313C4 /* PromptOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptOneView.swift; sourceTree = "<group>"; };
+		EC32E5862C4E5E37001313C4 /* PersonalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoView.swift; sourceTree = "<group>"; };
 		EC32E5892C4E6D1D001313C4 /* AgeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSlider.swift; sourceTree = "<group>"; };
 		EC32E58B2C4E6D7F001313C4 /* TFAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFAnimation.swift; sourceTree = "<group>"; };
 		EC32E58E2C4E6DD8001313C4 /* Tale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tale.swift; sourceTree = "<group>"; };
@@ -50,10 +50,10 @@
 		EC32E59D2C4F7F21001313C4 /* LanguagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePicker.swift; sourceTree = "<group>"; };
 		EC32E59F2C4F7FEC001313C4 /* VoiceGenderPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceGenderPicker.swift; sourceTree = "<group>"; };
 		EC32E5A12C4F80CC001313C4 /* LengthSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthSlider.swift; sourceTree = "<group>"; };
-		EC32E5A32C4FBD93001313C4 /* PromptTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptTwoView.swift; sourceTree = "<group>"; };
+		EC32E5A32C4FBD93001313C4 /* JobPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobPickerView.swift; sourceTree = "<group>"; };
 		EC32E5A52C4FE56C001313C4 /* GridJobNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridJobNames.swift; sourceTree = "<group>"; };
 		EC32E5A72C4FE5AA001313C4 /* backgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backgroundView.swift; sourceTree = "<group>"; };
-		EC32E5A92C4FE700001313C4 /* PromptThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptThreeView.swift; sourceTree = "<group>"; };
+		EC32E5A92C4FE700001313C4 /* ThemePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePickerView.swift; sourceTree = "<group>"; };
 		EC32E5AB2C50D61D001313C4 /* StoryThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryThemePicker.swift; sourceTree = "<group>"; };
 		EC32E5AE2C50DC7E001313C4 /* TaleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,9 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				EC32E5772C4E5320001313C4 /* HomeView.swift */,
-				EC32E5862C4E5E37001313C4 /* PromptOneView.swift */,
-				EC32E5A32C4FBD93001313C4 /* PromptTwoView.swift */,
-				EC32E5A92C4FE700001313C4 /* PromptThreeView.swift */,
+				EC32E5862C4E5E37001313C4 /* PersonalInfoView.swift */,
+				EC32E5A32C4FBD93001313C4 /* JobPickerView.swift */,
+				EC32E5A92C4FE700001313C4 /* ThemePickerView.swift */,
 				EC32E5882C4E6CF9001313C4 /* ComponentViews */,
 			);
 			path = View;
@@ -243,10 +243,10 @@
 				EC32E5A02C4F7FEC001313C4 /* VoiceGenderPicker.swift in Sources */,
 				EC32E5852C4E5DDE001313C4 /* buttonView.swift in Sources */,
 				EC32E5962C4E7096001313C4 /* Service.swift in Sources */,
-				EC32E5872C4E5E38001313C4 /* PromptOneView.swift in Sources */,
+				EC32E5872C4E5E38001313C4 /* PersonalInfoView.swift in Sources */,
 				EC32E58C2C4E6D7F001313C4 /* TFAnimation.swift in Sources */,
-				EC32E5AA2C4FE700001313C4 /* PromptThreeView.swift in Sources */,
-				EC32E5A42C4FBD93001313C4 /* PromptTwoView.swift in Sources */,
+				EC32E5AA2C4FE700001313C4 /* ThemePickerView.swift in Sources */,
+				EC32E5A42C4FBD93001313C4 /* JobPickerView.swift in Sources */,
 				EC32E59C2C4E9811001313C4 /* GenderPicker.swift in Sources */,
 				EC32E58A2C4E6D1D001313C4 /* AgeSlider.swift in Sources */,
 				EC32E59E2C4F7F21001313C4 /* LanguagePicker.swift in Sources */,
