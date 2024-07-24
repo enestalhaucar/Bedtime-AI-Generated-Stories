@@ -30,6 +30,7 @@
 		EC32E5AA2C4FE700001313C4 /* ThemePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5A92C4FE700001313C4 /* ThemePickerView.swift */; };
 		EC32E5AC2C50D61D001313C4 /* StoryThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5AB2C50D61D001313C4 /* StoryThemePicker.swift */; };
 		EC32E5AF2C50DC7E001313C4 /* TaleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5AE2C50DC7E001313C4 /* TaleViewModel.swift */; };
+		EC32E5B12C510E58001313C4 /* FetchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E5B02C510E58001313C4 /* FetchButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		EC32E5A92C4FE700001313C4 /* ThemePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePickerView.swift; sourceTree = "<group>"; };
 		EC32E5AB2C50D61D001313C4 /* StoryThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryThemePicker.swift; sourceTree = "<group>"; };
 		EC32E5AE2C50DC7E001313C4 /* TaleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaleViewModel.swift; sourceTree = "<group>"; };
+		EC32E5B02C510E58001313C4 /* FetchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				EC32E5A52C4FE56C001313C4 /* GridJobNames.swift */,
 				EC32E5A72C4FE5AA001313C4 /* backgroundView.swift */,
 				EC32E5AB2C50D61D001313C4 /* StoryThemePicker.swift */,
+				EC32E5B02C510E58001313C4 /* FetchButton.swift */,
 			);
 			path = ComponentViews;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				EC32E5A82C4FE5AA001313C4 /* backgroundView.swift in Sources */,
 				EC32E5782C4E5320001313C4 /* HomeView.swift in Sources */,
 				EC32E5A22C4F80CC001313C4 /* LengthSlider.swift in Sources */,
+				EC32E5B12C510E58001313C4 /* FetchButton.swift in Sources */,
 				EC32E5982C4E70DF001313C4 /* API.swift in Sources */,
 				EC32E5AC2C50D61D001313C4 /* StoryThemePicker.swift in Sources */,
 				EC32E5762C4E5320001313C4 /* BedtimeAIGeneratedStoriesApp.swift in Sources */,
