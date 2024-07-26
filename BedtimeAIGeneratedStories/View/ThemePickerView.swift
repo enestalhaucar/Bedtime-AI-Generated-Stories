@@ -12,6 +12,7 @@ struct ThemePickerView: View {
     @StateObject private var service = Service()
     @State var textInput = ""
     
+    
     // loading
     @State var reset = false
     
@@ -34,9 +35,9 @@ struct ThemePickerView: View {
                     
                     
                 }
-            }.sheet(isPresented: $service.isResponseDone) {
+            }.fullScreenCover(isPresented: $service.isResponseDone) {
                 AIResponseView(response: service.AIResponse)
-                    .presentationDetents([.fraction(0.1), .medium, .large])
+                    
                     
             }
             .navigationTitle("✨ Generate Story ✨")

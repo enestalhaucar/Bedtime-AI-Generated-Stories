@@ -9,7 +9,9 @@ import SwiftUI
 
 struct AIResponseView: View {
     var response : String
+    @StateObject private var service = Service()
     @State var boom = false
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -37,16 +39,30 @@ struct AIResponseView: View {
                 }
             }.toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Image(systemName: boom ? "bookmark.fill" : "bookmark")
-                        .foregroundStyle(boom ? .red : .white)
-                        .scaleEffect(boom ? 1.1 : 1)
-                        .onTapGesture {
-                            boom.toggle()
-                        }
-                        .animation(.bouncy, value: boom)
-                        .buttonStyle(.bordered)
-                        .clipShape(Circle())
-                    
+                    Button(action: {
+                        
+                    }, label: {
+                        Image(systemName: boom ? "bookmark.fill" : "bookmark")
+                            .foregroundStyle(.black)
+                    })
+                }
+                ToolbarItem(placement: .topBarLeading) {
+                    NavigationLink {
+                        HomeView()
+                            .navigationBarBackButtonHidden()
+                    } label: {
+                        Image(systemName: "xmark")
+                            .foregroundStyle(.black)
+                    }
+
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "trash")
+                    }
+                    .foregroundStyle(.black)
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
@@ -54,11 +70,13 @@ struct AIResponseView: View {
                     } label: {
                         Image(systemName: "square.and.arrow.up")
                     }
-                    .buttonStyle(.bordered)
-                    .clipShape(Circle())
+                    .foregroundStyle(.black)
+                 
                 }
                 
-            }
+            }.navigationBarTitleDisplayMode(.inline)
+                .toolbarBackground(Color.white, for: .navigationBar)
+                .toolbarBackground(.visible, for: .navigationBar)
         }
     }
     func shareStory(response: String) {

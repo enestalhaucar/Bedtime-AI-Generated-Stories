@@ -11,6 +11,8 @@ import SwiftUI
 
 struct HomeView: View {
     @State var path = NavigationPath()
+    @State var showSettings : Bool = false
+    @StateObject var viewModel = TaleViewModel()
     var body: some View {
         NavigationStack(path: $path){
             ZStack {
@@ -29,6 +31,8 @@ struct HomeView: View {
                         .fontDesign(.serif)
                         .padding(.bottom,50)
                     
+                    
+                    
                     Spacer()
                     NavigationLink {
                         PersonalInfoView()
@@ -40,7 +44,50 @@ struct HomeView: View {
                             .padding()
                             .background(Color.mint, in: .rect(cornerRadius: 16))
                     }
-                }.padding(.horizontal,40)
+                }.sheet(isPresented: $showSettings){
+                    Text("Hello")
+                }
+                .padding(.horizontal,40)
+                    .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            NavigationLink {
+                                
+                            } label: {
+                                HStack {
+                                    Text("\(viewModel.token)")
+                                        .foregroundStyle(.white)
+                                        .font(.title2)
+                                    Image("token")
+                                        .resizable()
+                                        .frame(width: 30,height: 30)
+                                }.padding(.horizontal,10)
+                                    .padding(.vertical,5)
+                                    .background(.gray, in: .rect(cornerRadius: 16))
+                            }
+
+                        }
+                        ToolbarItem(placement: .topBarTrailing) {
+                            NavigationLink {
+                                
+                            } label: {
+                                Image(systemName: "bookmark.fill")
+                                    .foregroundStyle(.green)
+                                    .font(.system(size: 20))
+                            }
+
+                        }
+                        
+                        ToolbarItem(placement: .topBarLeading) {
+                            Button(action: {
+                                showSettings = true
+                            }, label: {
+                                Image(systemName: "gear")
+                                    .foregroundStyle(.gray)
+                                    .font(.system(size: 20))
+                            })
+                        }
+                        
+                    }
             }
         }.environmentObject(TaleViewModel())
     }
